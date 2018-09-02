@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "__39-[CCChatListViewController getChatList]_block_invoke:CCChatListViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CCChatListViewController getChatList]:CCChatListViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[GlobalData sharedInstance].g_selfUser.user_qb_userid">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "+[UserObj instanceWithDict:]:UserObj.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CCRootViewController setInitViewController]:CCRootViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[GlobalData sharedInstance].g_selectedLocation">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CCSignInViewController registerOSUser]:CCSignInViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[GlobalData sharedInstance].g_strOSUserId.length">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__21-[GlobalData initIAP]_block_invoke:GlobalData.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[IAPShare sharedHelper].iap.products">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__40-[CCSignInViewController registerQBUser]_block_invoke_2:CCSignInViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[GlobalData sharedInstance].g_selfUser">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[GlobalData saveConfigData]:GlobalData.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

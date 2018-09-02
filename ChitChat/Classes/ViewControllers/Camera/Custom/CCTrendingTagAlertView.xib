@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNextLTPro-Bold.otf">
+            <string>AvenirNextLTPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CCTrendingTagAlertView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="415"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_trending" translatesAutoresizingMaskIntoConstraints="NO" id="IvN-S1-xF7"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending Tags" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5C-FJ-Ugb">
+                    <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="35"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="40" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ato-De-sQO">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="M6W-Pf-Xqp"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="N6r-FT-L3O"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gge-4x-QBJ" userLabel="Bottom View">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7y-Bn-dW3" userLabel="Line View">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="zqS-P3-mOB"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98a-bN-sfd">
+                            <fontDescription key="fontDescription" name="AvenirNextLTPro-Bold" family="Avenir Next LT Pro" pointSize="16"/>
+                            <state key="normal" title="Submit"/>
+                            <connections>
+                                <action selector="onClickSubmit:" destination="iN0-l3-epB" eventType="touchUpInside" id="2PN-Ja-hw9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="98a-bN-sfd" firstAttribute="top" secondItem="R7y-Bn-dW3" secondAttribute="bottom" id="0Gc-MU-qU6"/>
+                        <constraint firstItem="R7y-Bn-dW3" firstAttribute="centerX" secondItem="Gge-4x-QBJ" secondAttribute="centerX" id="8Rp-9Z-Tpz"/>
+                        <constraint firstAttribute="height" constant="50" id="G34-RS-gRX"/>
+                        <constraint firstItem="98a-bN-sfd" firstAttribute="centerX" secondItem="Gge-4x-QBJ" secondAttribute="centerX" id="P0t-Ie-IXQ"/>
+                        <constraint firstItem="R7y-Bn-dW3" firstAttribute="width" secondItem="Gge-4x-QBJ" secondAttribute="width" id="TCv-m9-V2k"/>
+                        <constraint firstItem="98a-bN-sfd" firstAttribute="width" secondItem="Gge-4x-QBJ" secondAttribute="width" id="Zc8-OR-VBJ"/>
+                        <constraint firstAttribute="bottom" secondItem="98a-bN-sfd" secondAttribute="bottom" id="jV2-Dd-zWu"/>
+                        <constraint firstItem="R7y-Bn-dW3" firstAttribute="top" secondItem="Gge-4x-QBJ" secondAttribute="top" id="pDO-DC-gqS"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rFl-Qe-Lw1">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="7He-PQ-SZq"/>
+                        <constraint firstAttribute="height" constant="30" id="OWm-Yd-igU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="X">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClickClose:" destination="iN0-l3-epB" eventType="touchUpInside" id="Vxl-L5-e65"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Ato-De-sQO" firstAttribute="centerX" secondItem="C5C-FJ-Ugb" secondAttribute="centerX" id="1Qb-j4-3pn"/>
+                <constraint firstItem="Ato-De-sQO" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="6LE-21-uf5"/>
+                <constraint firstItem="IvN-S1-xF7" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="Aod-W8-kvm"/>
+                <constraint firstItem="Gge-4x-QBJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="BcS-eg-cpW"/>
+                <constraint firstAttribute="bottom" secondItem="Gge-4x-QBJ" secondAttribute="bottom" id="Kbh-u4-9PZ"/>
+                <constraint firstItem="rFl-Qe-Lw1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="P3j-hS-KF3"/>
+                <constraint firstAttribute="trailing" secondItem="rFl-Qe-Lw1" secondAttribute="trailing" constant="5" id="PVK-ZS-cak"/>
+                <constraint firstItem="IvN-S1-xF7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Uy5-Lp-j7S"/>
+                <constraint firstItem="Gge-4x-QBJ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Zxe-xx-uIH"/>
+                <constraint firstItem="IvN-S1-xF7" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="aZg-zt-UUx"/>
+                <constraint firstItem="C5C-FJ-Ugb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="jL9-2i-6x6"/>
+                <constraint firstItem="Gge-4x-QBJ" firstAttribute="top" secondItem="Ato-De-sQO" secondAttribute="bottom" id="oTT-1S-4HO"/>
+                <constraint firstItem="C5C-FJ-Ugb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pFf-ED-wo4"/>
+                <constraint firstItem="Ato-De-sQO" firstAttribute="top" secondItem="C5C-FJ-Ugb" secondAttribute="bottom" constant="15" id="wDr-PK-kK1"/>
+                <constraint firstItem="IvN-S1-xF7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yD7-Sd-epm"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="m_tblTrendingTag" destination="Ato-De-sQO" id="twz-FI-bId"/>
+            </connections>
+            <point key="canvasLocation" x="-274" y="56"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_trending" width="351" height="413"/>
+    </resources>
+</document>

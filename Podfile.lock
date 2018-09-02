@@ -1,0 +1,180 @@
+PODS:
+  - ACEDrawingView (2.0.1)
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - APAvatarImageView (1.1.0)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - CKStringUtils (2.0.1)
+  - Crashlytics (3.8.3):
+    - Fabric (~> 1.6.3)
+  - CTPersistance (1.3.1)
+  - CustomIOSAlertView (0.9.5)
+  - DateTools (1.7.0)
+  - Fabric (1.6.9)
+  - FTIndicator (1.1.5):
+    - FTIndicator/FTNotificationIndicator (= 1.1.5)
+    - FTIndicator/FTProgressIndicator (= 1.1.5)
+    - FTIndicator/FTToastIndicator (= 1.1.5)
+  - FTIndicator/FTNotificationIndicator (1.1.5)
+  - FTIndicator/FTProgressIndicator (1.1.5)
+  - FTIndicator/FTToastIndicator (1.1.5)
+  - HandyFrame (1.1.1)
+  - HPGrowingTextView (1.1)
+  - IAPHelper (1.0.9)
+  - MDRadialProgress (1.3.2)
+  - NSDate+timezones (1.0.0)
+  - NSDate-Time-Ago (1.0.1)
+  - NSString+Color (1.1.4)
+  - NYSegmentedControl (1.0.7)
+  - OneSignal (2.2.0)
+  - QMChatViewController (0.3.10):
+    - QMChatViewController/Categories (= 0.3.10)
+    - QMChatViewController/KeyboardViewController (= 0.3.10)
+    - QMChatViewController/Protocols (= 0.3.10)
+    - QMChatViewController/Sections (= 0.3.10)
+    - QMChatViewController/Utils (= 0.3.10)
+    - QMChatViewController/Views (= 0.3.10)
+    - QuickBlox (>= 2.0)
+    - SDWebImage (~> 3.6)
+    - TTTAttributedLabel (> 1.13)
+  - QMChatViewController/Categories (0.3.10):
+    - QMChatViewController/Utils
+    - QuickBlox (>= 2.0)
+    - SDWebImage (~> 3.6)
+    - TTTAttributedLabel (> 1.13)
+  - QMChatViewController/KeyboardViewController (0.3.10):
+    - QuickBlox (>= 2.0)
+    - SDWebImage (~> 3.6)
+    - TTTAttributedLabel (> 1.13)
+  - QMChatViewController/Protocols (0.3.10):
+    - QuickBlox (>= 2.0)
+    - SDWebImage (~> 3.6)
+    - TTTAttributedLabel (> 1.13)
+  - QMChatViewController/Sections (0.3.10):
+    - QuickBlox (>= 2.0)
+    - SDWebImage (~> 3.6)
+    - TTTAttributedLabel (> 1.13)
+  - QMChatViewController/Utils (0.3.10):
+    - QuickBlox (>= 2.0)
+    - SDWebImage (~> 3.6)
+    - TTTAttributedLabel (> 1.13)
+  - QMChatViewController/Views (0.3.10):
+    - QMChatViewController/Categories
+    - QMChatViewController/Protocols
+    - QuickBlox (>= 2.0)
+    - SDWebImage (~> 3.6)
+    - TTTAttributedLabel (> 1.13)
+  - QMServices (0.4.4):
+    - Bolts (>= 1.5.0)
+    - QuickBlox (>= 2.6.5)
+  - QuickBlox (2.8.0.1)
+  - ResponsiveLabel (1.0.11)
+  - SCRecorder (2.7.0)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SHEmailValidator (1.0.5)
+  - SimpleColorPicker (0.0.1)
+  - SupersonicSDK (6.4.17.0)
+  - SVProgressHUD (2.0.3)
+  - TOCropViewController (2.0.10)
+  - TOWebViewController (2.2.6):
+    - TOWebViewController/Core (= 2.2.6)
+  - TOWebViewController/Core (2.2.6)
+  - TPKeyboardAvoiding (1.3)
+  - TTTAttributedLabel (2.0.0)
+  - Tune (4.10.0)
+
+DEPENDENCIES:
+  - ACEDrawingView
+  - AFNetworking (~> 3.0)
+  - APAvatarImageView
+  - CKStringUtils (~> 2.0.0)
+  - Crashlytics
+  - CTPersistance
+  - CustomIOSAlertView
+  - DateTools
+  - Fabric
+  - FTIndicator
+  - HandyFrame
+  - HPGrowingTextView
+  - IAPHelper
+  - MDRadialProgress
+  - NSDate+timezones
+  - NSDate-Time-Ago
+  - NSString+Color
+  - NYSegmentedControl
+  - OneSignal
+  - QMChatViewController
+  - QMServices
+  - QuickBlox
+  - ResponsiveLabel (~> 1.0.11)
+  - SCRecorder
+  - SDWebImage (~> 3.8)
+  - SHEmailValidator
+  - SimpleColorPicker
+  - SupersonicSDK
+  - SVProgressHUD
+  - TOCropViewController
+  - TOWebViewController
+  - TPKeyboardAvoiding
+  - Tune
+
+SPEC CHECKSUMS:
+  ACEDrawingView: d4fc350b27f2c9483245483bb09b389769bc74dd
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  APAvatarImageView: 428dbd0631a150fe876f90bfd7eaa275a19b9209
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  CKStringUtils: 53894ed5851c180f6aa811c1702e219cc72507fc
+  Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
+  CTPersistance: 86702ef1e5dc44d73795a0757e056c6cd816924f
+  CustomIOSAlertView: cc4fa8e36219be3fd5ebcd40789f5b4aaae0f38e
+  DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
+  Fabric: bc5bec42cef4bcf1ee3ce0e218fc518e4b44dfbb
+  FTIndicator: 8b9885b84340a19029ad13672add3bb8183feba8
+  HandyFrame: 4e95cc495e84e91f9434fe316f992ba4ee713e3a
+  HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
+  IAPHelper: e994287a6ab3cf6169efb4a09f7207d4dc413acf
+  MDRadialProgress: 1068574b9b4b870f64b605b07f734385bde5104d
+  NSDate+timezones: 4a9fa85acc0e461d74ee9fe5d53728caed4efc94
+  NSDate-Time-Ago: e9de167d0659ebe465c273e833e7b582f061fc41
+  NSString+Color: ea9e33d498d634adf56766c606c9128822094473
+  NYSegmentedControl: 55b4f9eb652767cae9799623ec3e49e50029ef47
+  OneSignal: 689099c1af05d1635a01190c3d9c6b0016971fd5
+  QMChatViewController: cb1f6172f794c85be20637c137c5a0b0c5abdb14
+  QMServices: 4e62c3dc9986db0cc3b9e06ae02a06a93429c1b8
+  QuickBlox: 51505b8deed7268c1bfd3139d4e4e9a1e9441d44
+  ResponsiveLabel: 9e31c425ed082481faf2360689243bb0ec8f8b22
+  SCRecorder: bbb521dbc222908876ec9cd9156bbc8a893bed44
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SHEmailValidator: 51862a04e37f721309725f044f226f760262a76d
+  SimpleColorPicker: f9e9fc3244eba64fc82ad7e1b8cf4fa53dcc50aa
+  SupersonicSDK: 475a118f596a5cb953c9fc178cabd9a264451558
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  TOCropViewController: 62c251749c728e985b556604874fd79d9de0ed4d
+  TOWebViewController: a29908019f7e0e0f8eccfab8a1ee8dcdf4fc5aac
+  TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  Tune: bff956556e4094cf8ff06489c59181e1d113b60a
+
+PODFILE CHECKSUM: 023802ca1b8faae3446224e62585860094af545c
+
+COCOAPODS: 1.0.1

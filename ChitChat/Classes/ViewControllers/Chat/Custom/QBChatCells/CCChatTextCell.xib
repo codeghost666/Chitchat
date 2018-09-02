@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CCChatTextCell" id="Gfs-Qb-Uut" customClass="CCChatTextCell">
+            <rect key="frame" x="0.0" y="0.0" width="252" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="252" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ct-uT-R8v" userLabel="Avatar Container">
+                        <rect key="frame" x="0.0" y="30" width="44" height="45"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5BJ-98-bLi" userLabel="Avatar Image View" customClass="QMImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="44" height="45"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="5BJ-98-bLi" secondAttribute="bottom" id="0rg-er-Oqv"/>
+                            <constraint firstAttribute="height" constant="45" id="5ad-yX-OAf"/>
+                            <constraint firstItem="5BJ-98-bLi" firstAttribute="leading" secondItem="2ct-uT-R8v" secondAttribute="leading" id="QFv-F9-zTz"/>
+                            <constraint firstItem="5BJ-98-bLi" firstAttribute="top" secondItem="2ct-uT-R8v" secondAttribute="top" id="Yos-pa-2Y8"/>
+                            <constraint firstAttribute="trailing" secondItem="5BJ-98-bLi" secondAttribute="trailing" id="oVj-3E-ACS"/>
+                            <constraint firstAttribute="width" constant="44" id="xcw-dH-uHI"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vKe-VM-9uV" userLabel="ContainerView" customClass="QMChatContainerView">
+                        <rect key="frame" x="46" y="0.0" width="163" height="75"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XY9-hq-pU3" userLabel="Message Container">
+                                <rect key="frame" x="11" y="3" width="149" height="71"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NickName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzl-pK-gSr" customClass="TTTAttributedLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="149" height="21"/>
+                                        <color key="backgroundColor" red="0.5758987968" green="0.63260070530000001" blue="0.69994870580000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" identifier="incCellTopLabelHeight" id="ApM-uy-Q1j"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="amL-FM-tJ3" userLabel="Line View">
+                                        <rect key="frame" x="0.0" y="24" width="1" height="23"/>
+                                        <color key="backgroundColor" red="0.92156862750000001" green="0.2784313725" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1" id="ROc-W2-61z"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Message Text" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9YY-ma-xoN" customClass="TTTAttributedLabel">
+                                        <rect key="frame" x="6" y="21" width="143" height="29"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16:44" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5F-yD-aBj" customClass="TTTAttributedLabel">
+                                        <rect key="frame" x="0.0" y="50" width="149" height="21"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" identifier="incCellBottomLabelHeight" id="1tO-JC-moh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="N5F-yD-aBj" firstAttribute="top" secondItem="amL-FM-tJ3" secondAttribute="bottom" constant="3" id="2YT-m0-3j1"/>
+                                    <constraint firstItem="lzl-pK-gSr" firstAttribute="top" secondItem="XY9-hq-pU3" secondAttribute="top" identifier="incCellTopLabelTopToMsgContainerTop" id="A91-7H-zLv"/>
+                                    <constraint firstItem="amL-FM-tJ3" firstAttribute="leading" secondItem="XY9-hq-pU3" secondAttribute="leading" id="MO1-Dk-8Uh"/>
+                                    <constraint firstItem="9YY-ma-xoN" firstAttribute="top" secondItem="lzl-pK-gSr" secondAttribute="bottom" identifier="incCellMsgTextTopToTopLabelBottom" id="RBT-c8-Vjv"/>
+                                    <constraint firstAttribute="trailing" secondItem="lzl-pK-gSr" secondAttribute="trailing" identifier="incCellMsgContainerTrailingToTopLabelTrailing" id="SZd-BD-ODg"/>
+                                    <constraint firstAttribute="trailing" secondItem="9YY-ma-xoN" secondAttribute="trailing" id="VG8-LW-Dw1"/>
+                                    <constraint firstItem="N5F-yD-aBj" firstAttribute="leading" secondItem="XY9-hq-pU3" secondAttribute="leading" identifier="incCellBottomLabelLeadingToContainerLeading" id="cV1-Jx-EUL"/>
+                                    <constraint firstItem="lzl-pK-gSr" firstAttribute="leading" secondItem="XY9-hq-pU3" secondAttribute="leading" id="i24-j3-YhG"/>
+                                    <constraint firstItem="amL-FM-tJ3" firstAttribute="top" secondItem="lzl-pK-gSr" secondAttribute="bottom" constant="3" id="lQP-1d-JX9"/>
+                                    <constraint firstItem="N5F-yD-aBj" firstAttribute="top" secondItem="9YY-ma-xoN" secondAttribute="bottom" identifier="incCellBottomLabelTopToMsgTextLabelBottom" id="nqs-nq-qNK"/>
+                                    <constraint firstAttribute="trailing" secondItem="N5F-yD-aBj" secondAttribute="trailing" id="uld-P2-z4j"/>
+                                    <constraint firstAttribute="bottom" secondItem="N5F-yD-aBj" secondAttribute="bottom" identifier="incCellMsgContainerToBottomLabelBottom" id="wsf-0s-BiY"/>
+                                    <constraint firstItem="9YY-ma-xoN" firstAttribute="leading" secondItem="amL-FM-tJ3" secondAttribute="trailing" constant="5" id="zdK-hd-Mfb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="163" id="Ma3-At-uWa"/>
+                            <constraint firstItem="XY9-hq-pU3" firstAttribute="leading" secondItem="vKe-VM-9uV" secondAttribute="leading" constant="11" identifier="incCellMsgContainerLeadingToContainerLeading" id="Q1k-0E-yMr"/>
+                            <constraint firstItem="XY9-hq-pU3" firstAttribute="top" secondItem="vKe-VM-9uV" secondAttribute="top" constant="3" identifier="incCellMsgContainerTopToContainerTop" id="eHM-ZL-Xsk"/>
+                            <constraint firstAttribute="bottom" secondItem="XY9-hq-pU3" secondAttribute="bottom" constant="1" identifier="incCellContainerBottomToMsgContainerBottom" id="kiD-0H-ex4"/>
+                            <constraint firstAttribute="trailing" secondItem="XY9-hq-pU3" secondAttribute="trailing" constant="3" identifier="incCellContainerTrailingToMsgContainerTrailing" id="lsK-aV-jvF"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                <color key="value" red="0.74387138850000001" green="0.53844690569999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
+                                <color key="value" red="0.5758987968" green="0.63260070530000001" blue="0.69994870580000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="leftArrow" value="NO"/>
+                            <userDefinedRuntimeAttribute type="size" keyPath="arrowSize">
+                                <size key="value" width="8" height="12"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="arrow" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vKe-VM-9uV" secondAttribute="bottom" identifier="incCellBottomToContainerBottom" id="Hsc-h9-Mjs"/>
+                <constraint firstItem="vKe-VM-9uV" firstAttribute="top" secondItem="Gfs-Qb-Uut" secondAttribute="top" identifier="incCellContainerTopToCellTop" id="MeC-oh-jiS"/>
+                <constraint firstItem="2ct-uT-R8v" firstAttribute="bottom" secondItem="vKe-VM-9uV" secondAttribute="bottom" identifier="incCellAvaContainerBottomToContainerBottom" id="WBP-fh-Wty"/>
+                <constraint firstItem="2ct-uT-R8v" firstAttribute="leading" secondItem="Gfs-Qb-Uut" secondAttribute="leading" id="WEl-8q-d1R"/>
+                <constraint firstItem="vKe-VM-9uV" firstAttribute="leading" secondItem="2ct-uT-R8v" secondAttribute="trailing" priority="750" constant="2" id="kIF-jy-efD"/>
+            </constraints>
+            <size key="customSize" width="252" height="75"/>
+            <connections>
+                <outlet property="avatarContainerViewHeightConstraint" destination="5ad-yX-OAf" id="9If-lG-zPg"/>
+                <outlet property="avatarContainerViewWidthConstraint" destination="xcw-dH-uHI" id="HsG-l2-9gR"/>
+                <outlet property="avatarView" destination="5BJ-98-bLi" id="aOS-bX-wFA"/>
+                <outlet property="bottomLabel" destination="N5F-yD-aBj" id="eCI-hr-Mic"/>
+                <outlet property="bottomLabelHeightConstraint" destination="1tO-JC-moh" id="e2t-Nb-co0"/>
+                <outlet property="containerView" destination="vKe-VM-9uV" id="Pr4-YE-bv6"/>
+                <outlet property="containerWidthConstraint" destination="Ma3-At-uWa" id="7oP-Jb-4hS"/>
+                <outlet property="messageContainer" destination="XY9-hq-pU3" id="hdQ-Ec-sFl"/>
+                <outlet property="messageContainerBottomInsetConstraint" destination="kiD-0H-ex4" id="bSn-T9-cOr"/>
+                <outlet property="messageContainerLeftInsetConstraint" destination="Q1k-0E-yMr" id="bJL-Gw-90Z"/>
+                <outlet property="messageContainerRightInsetConstraint" destination="lsK-aV-jvF" id="fXv-Ir-z0R"/>
+                <outlet property="messageContainerTopInsetConstraint" destination="eHM-ZL-Xsk" id="RNI-b5-pwZ"/>
+                <outlet property="senderMark" destination="amL-FM-tJ3" id="ZjQ-8d-VsC"/>
+                <outlet property="textView" destination="9YY-ma-xoN" id="hhb-93-NbW"/>
+                <outlet property="textViewBottomLabelVerticalSpaceConstraint" destination="nqs-nq-qNK" id="weO-k5-zJK"/>
+                <outlet property="topLabel" destination="lzl-pK-gSr" id="WNX-xs-Shq"/>
+                <outlet property="topLabelHeightConstraint" destination="ApM-uy-Q1j" id="hyS-gq-KXH"/>
+                <outlet property="topLabelTextViewVerticalSpaceConstraint" destination="RBT-c8-Vjv" id="sWa-08-t4R"/>
+            </connections>
+            <point key="canvasLocation" x="253" y="191.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,79 @@
+//
+//  ChitChat_Prefix.pch
+//  ChitChat
+//
+//  Created by Jinjin Lee on 10/12/16.
+//  Copyright © 2016 developer. All rights reserved.
+//
+
+#ifndef ChitChat_Prefix_pch
+#define ChitChat_Prefix_pch
+
+// Import Pod Libraries
+#import <ACEDrawingView/ACEDrawingView.h>
+#import <AFNetworking/AFNetworking.h>
+#import <UIKit+AFNetworking.h>
+#import <SimpleColorPicker/SimpleColorPickerView.h>
+#import <SCRecorder/SCRecorder.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h>
+//#import <NYXImagesKit/NYXImagesKit.h>
+#import <MDRadialProgress/MDRadialProgressView.h>
+#import <MDRadialProgress/MDRadialProgressTheme.h>
+#import <MDRadialProgress/MDRadialProgressLabel.h>
+#import <DateTools/DateTools.h>
+#import <SHEmailValidator/SHEmailValidator.h>
+#import <SHEmailValidator/SHEmailValidationTextField.h>
+#import <NSString+Color/NSString+Color.h>
+#import <CKStringUtils/CKStringUtils.h>
+#import <NYSegmentedControl/NYSegmentedControl.h>
+#import <APAvatarImageView/APAvatarImageView.h>
+#import <HandyFrame/UIView+LayoutMethods.h>
+#import <HPGrowingTextView/HPGrowingTextView.h>
+#import <SupersonicSDK/Supersonic/Supersonic.h>
+#import <SupersonicSDK/Supersonic/SUSupersonicAdsConfiguration.h>
+#import <IAPHelper/IAPShare.h>
+#import <IAPHelper/NSString+Base64.h>
+#import <QMServices/QMServices.h>
+#import <NSDate-Time-Ago/NSDate+NVTimeAgo.h>
+#import <FTIndicator/FTIndicator.h>
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
+#import <OneSignal/OneSignal.h>
+#import <TOWebViewController/TOWebViewController.h>
+#import <ResponsiveLabel/ResponsiveLabel.h>
+#import <NSDate+timezones/NSDate+timezones.h>
+@import Tune;
+
+
+// Import System Frameworks
+#import <AdSupport/AdSupport.h>
+
+// Import Custom Category Classes
+#import "NSString+Custom.h"
+#import "NSObject+Custom.h"
+#import "NSDate+Custom.h"
+#import "UIViewController+Custom.h"
+#import "CTVideoViewCommonHeader.h"
+#import "UIImage+Rotating.h"
+
+// Import Classes
+#import "Constants.h"
+#import "UserObj.h"
+#import "EmojiObj.h"
+#import "LocationObj.h"
+#import "NotificationObj.h"
+#import "StoryObj.h"
+#import "IAPObj.h"
+#import "ReceiptObj.h"
+
+#import "CustomTextField.h"
+#import "CustomView.h"
+#import "CustomButton.h"
+
+#import "GlobalData.h"
+#import "WebService.h"
+
+
+#endif /* ChitChat_Prefix_pch */
